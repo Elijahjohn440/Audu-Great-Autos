@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="./src/output.css" rel="stylesheet"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Get Started - Audu Great Autos</title>
+</head>
+
+<body class="bg-gray-50 font-sans text-gray-700">
+
+    <header class="bg-white shadow">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <img class="w-36" src="src/images/logo.svg" alt="Audu Great Autos">
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="text-gray-700 hover:text-sky-500">Home</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-sky-500">About</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-sky-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-16 px-6 space-y-24">
+
+        <!-- Sign Up Section -->
+        <section class="bg-sky-500 rounded-xl p-12 text-white text-center shadow-lg">
+            <h2 class="text-4xl font-bold mb-4">Sign Up Today</h2>
+            <p class="mb-6">Create your account to start browsing and customizing your dream car.</p>
+            <form class="max-w-lg mx-auto grid grid-cols-1 gap-4">
+                <input type="text" placeholder="Full Name" class="p-3 rounded text-gray-800">
+                <input type="email" placeholder="Email Address" class="p-3 rounded text-gray-800">
+                <input type="password" placeholder="Password" class="p-3 rounded text-gray-800">
+                <button class="bg-white text-sky-500 font-bold py-3 rounded hover:bg-gray-100 transition">Sign
+                    Up</button>
+            </form>
+        </section>
+
+        <!-- Car Selection Section -->
+        <section class="bg-white rounded-xl p-12 shadow-lg">
+            <h2 class="text-3xl font-bold mb-6 text-slate-800 text-center">Select Your Car</h2>
+            <form class="max-w-2xl mx-auto grid grid-cols-1 gap-6">
+                <div class="grid grid-cols-2 gap-4">
+                    <select class="p-3 rounded border border-gray-300">
+                        <option value="">Select Make</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="honda">Honda</option>
+                        <option value="bmw">BMW</option>
+                    </select>
+                    <select class="p-3 rounded border border-gray-300">
+                        <option value="">Select Model</option>
+                        <option value="corolla">Corolla</option>
+                        <option value="civic">Civic</option>
+                        <option value="x5">X5</option>
+                    </select>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <select class="p-3 rounded border border-gray-300">
+                        <option value="">Select Year</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                    </select>
+                    <select class="p-3 rounded border border-gray-300">
+                        <option value="">Select Transmission</option>
+                        <option value="manual">Manual</option>
+                        <option value="automatic">Automatic</option>
+                    </select>
+                </div>
+            </form>
+        </section>
+
+        <!-- Description & Submit Section -->
+        <section class="bg-white rounded-xl p-12 shadow-lg">
+            <h2 class="text-3xl font-bold mb-6 text-slate-800 text-center">Describe Your Dream Car</h2>
+            <form class="max-w-2xl mx-auto grid grid-cols-1 gap-4">
+                <textarea placeholder="Describe your preferred car, features, and budget..." rows="6"
+                    class="p-3 rounded border border-gray-300"></textarea>
+                <button class="bg-sky-500 text-white font-bold py-3 rounded hover:bg-sky-700 transition">Submit
+                    Request</button>
+            </form>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
