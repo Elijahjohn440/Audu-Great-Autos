@@ -10,18 +10,30 @@
 
 <body class="bg-gradient-to-r from-sky-50 via-white to-sky-100 text-gray-800">
 
-    <header class="fixed top-0 left-0 w-full bg-slate-500 text-white shadow-md z-50">
+    <header class="fixed top-0 left-0 w-full bg-slate-900 text-white shadow-md z-50">
         <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <!-- Logo -->
             <div class="flex items-center space-x-2">
                 <img class="w-12 h-12" src="src/images/mylo2.png" alt="Logo">
                 <h1 class="text-2xl font-bold text-white">Audu Great Autos</h1>
             </div>
-            <nav>
-                <ul class="flex space-x-6">
-                    <li><a href="#home" class="hover:text-sky-500">Home</a></li>
-                    <li><a href="#about" class="hover:text-sky-500">About</a></li>
-                    <li><a href="#services" class="hover:text-sky-500">Services</a></li>
-                    <li><a href="#contact" class="hover:text-sky-500">Contact</a></li>
+
+            <!-- Hamburger (mobile) -->
+            <button id="menu-btn" class="md:hidden block focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            <!-- Navbar -->
+            <nav id="menu" class="hidden md:flex">
+                <ul
+                    class="flex flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0 mt-4 md:mt-0 text-center md:text-left">
+                    <li><a href="#home" class="hover:text-sky-300">Home</a></li>
+                    <li><a href="#about" class="hover:text-sky-300">About</a></li>
+                    <li><a href="#services" class="hover:text-sky-300">Services</a></li>
+                    <li><a href="#contact" class="hover:text-sky-300">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -47,22 +59,22 @@
                 to
                 meet your needs.</p>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-teal-800/70 p-10 rounded-lg shadow-md shadow-sky-500/30 text-white 
-            hover:shadow-2xl hover:shadow-sky-500/50 hover:bg-teal-800/90 
+                <div class="bg-sky-500/70 p-10 rounded-lg shadow-md shadow-sky-500/30 text-white 
+            hover:shadow-2xl hover:shadow-sky-500/50 hover:bg-sky-500/90 
             transition duration-300 ease-in-out">
                     <h4 class="text-xl font-semibold mb-2">Car Sales</h4>
                     <p>Wide variety of cars available for purchase, from SUVs to Sedans.</p>
                 </div>
 
-                <div class="bg-teal-800/70 p-10 rounded-lg shadow-md shadow-sky-500/30 text-white 
-            hover:shadow-2xl hover:shadow-sky-500/50 hover:bg-teal-800/90 
+                <div class="bg-sky-500/70 p-10 rounded-lg shadow-md shadow-sky-500/30 text-white 
+            hover:shadow-2xl hover:shadow-sky-500/50 hover:bg-sky-500/90 
             transition duration-300 ease-in-out">
                     <h4 class="text-xl font-semibold mb-2">Car Financing</h4>
                     <p>Flexible financing and installment payment options tailored to you.</p>
                 </div>
 
-                <div class="bg-teal-800/70 p-10 rounded-lg shadow-md shadow-sky-500/30 text-white 
-            hover:shadow-2xl hover:shadow-sky-500/50 hover:bg-teal-800/90 
+                <div class="bg-sky-500/70 p-10 rounded-lg shadow-md shadow-sky-500/30 text-white 
+            hover:shadow-2xl hover:shadow-sky-500/50 hover:bg-sky-500/90 
             transition duration-300 ease-in-out">
                     <h4 class="text-xl font-semibold mb-2">Car Inspection</h4>
                     <p>Book a test drive and inspection for total peace of mind.</p>
@@ -212,6 +224,16 @@
                 }, (error) => {
                     alert("❌ Failed to send request: " + JSON.stringify(error));
                 });
+        });
+
+
+
+        // Mobile menu toggle
+        const menuBtn = document.getElementById("menu-btn");
+        const menu = document.getElementById("menu");
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
         });
     </script>
 </body>
