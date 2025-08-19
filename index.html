@@ -98,58 +98,101 @@
         </div>
     </section>
 
-
     <!-- Testimonial Section -->
     <section class="py-20 bg-white">
         <div class="container mx-auto text-center">
             <h3 class="text-4xl font-bold text-sky-600 mb-10">What Our Customers Say</h3>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-sky-50 p-6 rounded-lg shadow">
-                    <p class="italic">"I found my dream SUV at Audu Great Autos. The process was seamless!"</p>
-                    <h5 class="mt-4 font-bold">– James O.</h5>
+
+                <!-- Testimonial 1 -->
+                <div class="bg-sky-50 p-6 rounded-lg shadow-lg">
+                    <div class="w-28 h-28 mx-auto rounded-full bg-cover bg-center shadow-md"
+                        style="background-image: url('src/images/auto6.avif');">
+                    </div>
+                    <p class="italic mt-4">"I found my dream SUV at Audu Great Autos. The process was seamless!"</p>
+                    <h5 class="mt-3 font-bold">– James O.</h5>
                 </div>
-                <div class="bg-sky-50 p-6 rounded-lg shadow">
-                    <p class="italic">"Best customer service and flexible payments. Highly recommend."</p>
-                    <h5 class="mt-4 font-bold">– Sarah M.</h5>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-sky-50 p-6 rounded-lg shadow-lg">
+                    <div class="w-28 h-28 mx-auto rounded-full bg-cover bg-center shadow-md"
+                        style="background-image: url('src/images/auto8.jpg');">
+                    </div>
+                    <p class="italic mt-4">"Best customer service and flexible payments. Highly recommend."</p>
+                    <h5 class="mt-3 font-bold">– John E.</h5>
                 </div>
-                <div class="bg-sky-50 p-6 rounded-lg shadow">
-                    <p class="italic">"Transparent process and fast delivery. I love my new ride!"</p>
-                    <h5 class="mt-4 font-bold">– David K.</h5>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-sky-50 p-6 rounded-lg shadow-lg">
+                    <div class="w-28 h-28 mx-auto rounded-full bg-cover bg-center shadow-md"
+                        style="background-image: url('src/images/auto7.avif');">
+                    </div>
+                    <p class="italic mt-4">"Transparent process and fast delivery. I love my new ride!"</p>
+                    <h5 class="mt-3 font-bold">– David K.</h5>
                 </div>
+
             </div>
         </div>
     </section>
+
+
+
     <footer class="bg-slate-900 text-white py-12 px-6">
-        <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
-            <p class="mb-6 text-gray-300">Tell us what car you’re looking for. We’ll get back to you quickly!</p>
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
 
-            <form id="contact-form" class="bg-white rounded-lg shadow-lg p-8 space-y-6 text-slate-800">
-                <div>
-                    <label for="name" class="block font-medium">Your Name</label>
-                    <input type="text" id="name" name="user_name" required
-                        class="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-sky-500">
-                </div>
-                <div>
-                    <label for="email" class="block font-medium">Your Email</label>
-                    <input type="email" id="email" name="user_email" required
-                        class="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-sky-500">
-                </div>
-                <div>
-                    <label for="message" class="block font-medium">What Car Are You Looking For?</label>
-                    <textarea id="message" name="message" rows="5" required
-                        class="w-full border border-gray-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-sky-500"></textarea>
-                </div>
-                <button type="submit"
-                    class="w-full bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 rounded-md transition">Send
-                    Request</button>
-            </form>
+            <!-- Left: Footer Links -->
+            <div>
+                <h2 class="text-2xl font-bold mb-4">Audu Great Autos</h2>
+                <p class="mb-6 text-gray-300">Your trusted partner for quality cars, financing, and great deals.</p>
 
-            <p id="form-status" class="mt-4 text-green-400 hidden">✅ Your request has been sent successfully!</p>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#home" class="hover:text-white transition">🏠 Home</a></li>
+                    <li><a href="#about" class="hover:text-white transition">ℹ️ About Us</a></li>
+                    <li><a href="#services" class="hover:text-white transition">🚗 Services</a></li>
+                    <li><a href="#contact" class="hover:text-white transition">📩 Contact - 07932084656</a></li>
+                </ul>
+            </div>
 
-            <p class="mt-8 text-gray-400">&copy; 2025 Audu Great Autos. All rights reserved.</p>
+            <!-- Right: Contact Form -->
+            <div>
+                <h2 class="text-2xl font-bold mb-6 text-center">Get in Touch</h2>
+                <p class="mb-4 text-center text-gray-300">Tell us what car you’re looking for. We’ll respond quickly!
+                </p>
+
+                <form id="contact-form"
+                    class="bg-white rounded-lg shadow-lg p-6 space-y-4 text-slate-800 max-w-md mx-auto">
+                    <div>
+                        <label for="name" class="block font-medium">Your Name</label>
+                        <input type="text" id="name" name="user_name" required
+                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-sky-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block font-medium">Your Email</label>
+                        <input type="email" id="email" name="user_email" required
+                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-sky-500">
+                    </div>
+                    <div>
+                        <label for="message" class="block font-medium">What Car Are You Looking For?</label>
+                        <textarea id="message" name="message" rows="4" required placeholder="Our contact-07932084656"
+                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:ring-2 focus:ring-sky-500"></textarea>
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-sky-600 hover:bg-sky-700 text-white font-bold py-2 rounded-md transition">
+                        Send Request
+                    </button>
+                </form>
+
+                <p id="form-status" class="mt-4 text-green-400 text-center hidden">✅ Your request has been sent
+                    successfully!</p>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-400">
+            <p>&copy; 2025 Audu Great Autos. All rights reserved.</p>
         </div>
     </footer>
+
 
 
 
